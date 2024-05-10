@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
 }
 body {
   background-color: #091b29;
@@ -200,9 +202,10 @@ body {
 .social-box {
   position: absolute;
   bottom: 40px;
-  width: 170px;
+  width: 190px;
   display: flex;
   justify-content: space-between;
+
 }
 .social-box::before {
   content: "";
@@ -275,22 +278,22 @@ div img {
   }
 }
 
-.main {
+.about {
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 0% 10%;
 }
-.main-content {
+.about-content {
   position: relative;
   justify-content: center;
   align-items: center;
 }
 .h1-about {
   position: absolute;
-  font-size: 56px;
-  font-weight: 600;
-  padding-left: 25rem;
+  font-size: 60px;
+  font-weight: 700;
+  padding-left: 22rem;
 }
 
 .h1-about::before{
@@ -304,6 +307,11 @@ div img {
   animation: showright 1s ease forwards;
   animation-delay: 0.1s;
 }
+#h1-2 {
+  padding-left: 34rem;
+  color: #00abf0;
+}
+
 .main-pic {
   position: flex;
   align-items: center;
@@ -314,9 +322,41 @@ div img {
 }
 
 .h2-about {
-  position: relative;
+  position:relative;
+  display: block;
   font-size: 36px;
   font-weight: 700;
   line-height: 3;
   padding-left: 20rem;
+
 }
+
+.hidden {
+  display: none;
+}
+
+  .read-btn {
+    background-color: #00abf0;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius:15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 26rem;
+  }
+  
+  .read-more:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
