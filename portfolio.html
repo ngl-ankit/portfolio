@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -18,17 +25,17 @@
       <h1 class="logo">Ankit</h1>
       <nav class="navbar">
         <ul>
-          <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Education</a>
           <a href="#">Skills</a>
-          <a href="#">Educations</a>
           <a href="#">Contact</a>
         </ul>
       </nav>
     </header>
-    <main class="home">
+    <main class="home" id="home">
       <div class="home-content">
-        <h1>Hi I am Ankit Gujjar</h1>
+        <h1>Hi I'm Ankit Gujjar</h1>
         <h3>Frontend Developer</h3>
         <p>
           Self-taught Frontend Developer with foundational skills in HTML, CSS,
@@ -39,19 +46,59 @@
         </p>
 
         <div class="btn-box">
-          <a href="#">Contact me</a>
-          <a href="#">Hire me</a>
+          <a href="#">Hire Me</a>
+          <a href="#">Let's Talk</a>
         </div>
       </div>
+      <div class="social-box">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </main>
-    
+
     <div id="div-img">
       <img
         src="imgs/denaf4r-24aa3809-2e0d-4be7-ba56-582ec7932dd8.png"
         alt="main-pic"
       />
     </div>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h1 class="h1-about">About</h1>
+        <h1 class="h1-about" id="h1-2">Me</h1>
 
+        <img
+          src="imgs/denaf4r-24aa3809-2e0d-4be7-ba56-582ec7932dd8.png"
+          class="main-pic"
+        />
+        <div>
+        <h2 class="h2-about">Frontend Developer!</h2>
+        </div>
+        <div id="content">
+          <p>
+            Hello! I'm Ankit, a self-motivated frontend developer passionate
+            about creating captivating digital experiences. My journey into
+            coding began with a simple curiosity about web development, and
+            through tireless self-study and hands-on practice, I've cultivated a
+            diverse skill set in HTML, CSS, and JavaScript.With an eye for
+            detail and a commitment to accessibility, I craft clean, semantic
+            code that not only looks great but also functions seamlessly across
+            devices.
+            <span id="more" class="hidden">
+              My portfolio is a testament to my dedication, featuring a range of
+              projects where I've brought designs to life, from sleek personal
+              websites to dynamic web applications. I'm excited to continue my
+              growth in this ever-evolving field, pushing boundaries and
+              exploring new technologies with each project I undertake. Let's
+              build something extraordinary together!</span
+            >
+          </p>
+          <button class="read-btn" onclick="toggleReadMore()">Read More</button>
+        </div>
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>
