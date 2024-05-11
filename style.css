@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-
 }
 body {
   background-color: #091b29;
@@ -83,9 +82,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-
 }
-
 
 .home-content h1::before {
   content: "";
@@ -97,7 +94,7 @@ body {
   background-color: #091b29;
   animation: showright 1s ease forwards;
   animation-delay: 0.1s;
-} 
+}
 .home-content h3 {
   position: relative;
   font-size: 32px;
@@ -205,7 +202,6 @@ body {
   width: 190px;
   display: flex;
   justify-content: space-between;
-
 }
 .social-box::before {
   content: "";
@@ -269,7 +265,6 @@ div img {
   position: relative;
   width: 250px;
   border-radius: 100px;
-  
 }
 
 @keyframes showright {
@@ -296,7 +291,7 @@ div img {
   padding-left: 22rem;
 }
 
-.h1-about::before{
+.h1-about::before {
   content: "";
   position: absolute;
   top: 0;
@@ -318,45 +313,255 @@ div img {
   margin-left: 25rem;
   width: 10rem;
   margin-top: 0.75rem;
- 
 }
 
 .h2-about {
-  position:relative;
+  position: relative;
   display: block;
   font-size: 36px;
   font-weight: 700;
   line-height: 3;
   padding-left: 20rem;
-
 }
 
 .hidden {
   display: none;
 }
 
-  .read-btn {
-    background-color: #00abf0;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius:15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-left: 26rem;
+.read-btn {
+  background-color: #00abf0;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 26rem;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* General Styles for All Sections */
+section {
+  padding: 80px 10%; /* increased padding to add more space */
+  background-color: #091b29;
+  color: #ededed;
+  margin-bottom: 50px; /* additional space between sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* in case of overflow */
+}
+
+.section-title {
+  font-size: 40px;
+  color: #00abf0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Education Section Styles */
+.education {
+  background-color: transparent;
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+.timeline-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.timeline-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+
+/* Skills Section Styles */
+.skills {
+  background-color: transparent;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  color: #00b7ff;
+}
+#skills-h1 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.skill-card {
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.skill-card p {
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    justify-content: center;
   }
-  
-  .read-more:hover {
-    background-color: #0056b3;
-  }
-  
+}
 
+/* contact section */
 
+.contact {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 40px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  transform: translateY(20px); /* Start slightly lower */
+  opacity: 0; /* Start invisible */
+}
 
+.visible,
+.contact:hover {
+  transform: translateY(-10px); /* Move up when visible or hovered */
+  opacity: 1; /* Fully visible */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
+}
 
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  transition: border 0.3s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00b4d8;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1b6574;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
