@@ -43,7 +43,7 @@ function toggleReadMore() {
         btnText.textContent = "Read more";
     }
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const contactSection = document.querySelector('.contact');
 
     if (!contactSection) {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    const handleIntersect = function(entries, observer) {
+    const handleIntersect = function (entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
@@ -67,8 +67,15 @@ document.addEventListener("DOMContentLoaded", function() {
         threshold: 0.1
     });
 
-    observer.observe(contactSection); 
+    observer.observe(contactSection);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.navbar-toggle');
+    const navbarLinks = document.querySelector('.navbar');
 
+    toggleButton.addEventListener('click', function() {
+        navbarLinks.classList.toggle('active');
+    });
+});
 
