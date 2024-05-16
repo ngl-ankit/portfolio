@@ -32,8 +32,8 @@ function smoothScrollTo(targetPosition, duration) {
 };
 
 function toggleReadMore() {
-    var moreText = document.getElementById("more");
-    var btnText = document.querySelector(".content button");
+    let moreText = document.getElementById("more");
+    let btnText = document.querySelector(".content button");
 
     if (moreText.style.display === "none" || moreText.style.display === "") {
         moreText.style.display = "inline";
@@ -42,7 +42,29 @@ function toggleReadMore() {
         moreText.style.display = "none";
         btnText.textContent = "Read more";
     }
-}
+};
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+  
+    toggleIcons.forEach(icon => {
+      icon.addEventListener('click', function() {
+        const educationEntry = this.closest('.education-entry');
+        const details = educationEntry.querySelector('.details');
+  
+        // Toggle the details visibility
+        details.classList.toggle('active');
+        educationEntry.classList.toggle('active');
+  
+        // Change the icon from plus to minus when details are shown
+        if (details.classList.contains('active')) {
+          this.classList.add('open');
+        } else {
+          this.classList.remove('open');
+        }
+      });
+    });
+  });
+  
 document.addEventListener("DOMContentLoaded", function () {
     const contactSection = document.querySelector('.contact');
 
@@ -78,4 +100,3 @@ document.addEventListener('DOMContentLoaded', function() {
         navbarLinks.classList.toggle('active');
     });
 });
-
